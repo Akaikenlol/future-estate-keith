@@ -11,9 +11,13 @@ template.innerHTML = `
 			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">About</a></li>
 			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Service</a></li>
 			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Blog</a></li>
-			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Contact</a></li>
+			<li><a href="/public/pages/Contact/index.html" class="text-slate-600 text-md font-semibold hover:text-purple-500">Contact</a></li>
 		</ul>
-		<button class="py-2 px-5 bg-purple-500 rounded-md text-white active:text-gray-200 active:bg-purple-700">Sign Up</button>
+		<div class="flex gap-5 items-center">
+			<a href="/public/pages/SignUp/index.html" class="py-2 px-5 flex justify-center items-center bg-purple-500 rounded-sm text-white active:text-gray-200 active:bg-purple-700">Sign Up</a>	
+			<a href="/public/pages/Login/index.html" class="text-purple-500">Login</a>
+		</div>
+		
 		
     </div>
 `;

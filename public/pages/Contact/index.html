@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Future Residency Limited | Contact</title>
+		<link rel="stylesheet" href="../../styles.css" />
+	</head>
+	<body>
+		<header-component></header-component>
+		<div class="flex items-center justify-center w-full py-32">
+			<div class="flex flex-col max-w-5xl gap-10 p-2">
+				<div class="flex flex-col gap-5">
+					<h1 class="text-3xl">Contact Us</h1>
+					<p class="w-1/2">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, corrupti
+						in. Voluptate inventore dignissimos repudiandae tempora
+					</p>
+				</div>
+
+				<!-- Form -->
+
+				<div class="flex w-full h-auto shadow-md ">
+					<div class="w-2/3">
+						<form
+							id="ctform"
+							class="flex flex-col items-start justify-center p-5 bg-white">
+							<h1 class="mb-5 text-2xl font-bold text-center">Send us a message</h1>
+							<div class="flex flex-col w-full h-auto gap-1 sm:gap-5">
+								<div class="flex gap-5">
+									<div class="flex flex-col w-1/2 gap-2">
+										<label for="fname" class="text-sm">Your Name</label>
+										<input
+											type="text"
+											id="name"
+											class="w-full border rounded-sm h-9 sm:h-10 focus:outline-purple-400" />
+									</div>
+									<div class="flex flex-col w-1/2 gap-2">
+										<label for="address" class="text-sm">Email Address</label>
+										<input
+											type="text"
+											id="address"
+											class="w-full border rounded-sm h-9 sm:h-10 focus:outline-purple-400" />
+									</div>
+								</div>
+								<div class="flex gap-5">
+									<div class="flex flex-col w-1/2 gap-2">
+										<label for="phone" class="text-sm">Phone Number</label>
+										<input
+											type="phone"
+											id="phone"
+											class="w-full border rounded-sm h-9 sm:h-10 focus:outline-purple-400" />
+									</div>
+									<div class="flex flex-col w-1/2 gap-2">
+										<label for="company" class="text-sm">Company</label>
+										<input
+											type="text"
+											id="company"
+											class="w-full border rounded-sm h-9 sm:h-10 focus:outline-purple-400" />
+									</div>
+								</div>
+								<div class="flex gap-5">
+									<div class="flex flex-col w-full gap-2">
+										<label for="phone" class="text-sm">Message</label>
+
+										<textarea name="message" id="message"  class="w-full h-32 border rounded-sm focus:outline-purple-400" /></textarea>
+									</div>
+								</div>
+							</div>
+							<p href="" class="mt-5 text-gray-700 text-xm sm:text-lg">
+								Login to your account to message
+								<a href="../Login/index.html" class="text-blue-500"> Login</a>
+							</p>
+							<a
+								href=""
+								class="flex items-center justify-center w-32 h-10 my-auto mt-5 text-white bg-purple-500 rounded-sm">
+								Send
+							</a>
+						</form>
+					</div>
+					<div class="flex flex-col justify-between w-1/2 gap-5 p-10 bg-gray-100">
+						<h1 class="text-xl">Contact Informaiton</h1>
+						<div class="flex flex-col gap-8">
+							<div class="flex items-center gap-2">
+								<img src="/public/assets/icons/location.png" alt="" class="h-7">
+								<p>No.14/505, Kabaraye Road, Bahan, Yangon</p>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="/public/assets/icons/location.png" alt="" class="h-7">
+								<p>futureresidency.lmt@email.com</p>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="/public/assets/icons/location.png" alt="" class="h-7">
+								<p>+959 123 456 789</p>
+							</div>
+						</div>
+						<div class="flex gap-5">
+							<a href=""><img src="/public/assets/icons/Facebook.png" alt=""></a>
+							<a href=""><img src="/public/assets/icons/instagram.png" alt=""></a>
+							<a href=""><img src="/public/assets/icons/twitter.png" alt=""></a>
+							<a href=""><img src="/public/assets/icons/linkedin.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Map -->
+
+				<div class="w-full bg-black aspect-video" id="map"></div>
+			</div>
+		</div>
+
+		<script src="../../scripts/scrollreveal.js"></script>
+		<script src="../../components/index.js" type="module"></script>
+		<script src="./index.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqQKAJPW0zfcZd5WXzbqeLFrVBGTC-xoc&map_ids=da5aba496072d2f8&callback=initMap"></script>
+	</body>
+</html>
