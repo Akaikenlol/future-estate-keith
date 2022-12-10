@@ -11,6 +11,8 @@
 		<header-component></header-component>
 
 		<div class="relative w-full h-auto pb-10 bg-purple-50">
+			<!-- Hero -->
+
 			<div class="flex items-center max-w-5xl px-2 py-20 mx-auto sm:px-10">
 				<div class="flex flex-col gap-5 sm:gap-7 auto">
 					<h1 class="max-w-sm text-4xl font-bold sm:text-5xl">
@@ -57,6 +59,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Search -->
+
 			<div
 				class="absolute left-0 right-0 z-10 flex-col hidden w-full max-w-5xl gap-5 p-5 ml-auto mr-auto bg-white rounded-md shadow-md -bottom-20 lg:flex">
 				<h1 class="text-xl text-gray-700">Search for available properties</h1>
@@ -123,7 +128,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-full h-screen pt-0 lg:pt-40">
+
+		<!-- Popular Card -->
+
+		<div class="w-full pt-0 lg:pt-40">
 			<div class="flex flex-col max-w-5xl gap-5 p-2 mx-auto">
 				<p class="px-2 text-2xl">Popular</p>
 				<div class="flex justify-between">
@@ -136,9 +144,42 @@
 					</div>
 				</div>
 
-				<div class="grid gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+				<div
+					class="grid gap-5 popular-card-container lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
 					<div
-						class="flex flex-col duration-200 ease-in-out shadow-md hover:scale-105">
+						class="flex flex-col duration-200 ease-in-out shadow-md popular-card hover:scale-105">
+						<img src="/public/assets/images/bg.png" class="object-cover h-52" />
+						<div class="flex flex-col gap-5 p-3">
+							<div class="flex items-center gap-2">
+								<img src="/public/assets/icons/location.png" alt="" class="w-5" />
+								<p class="text-lg font-bold text-gray-500">Bahan, Yangon</p>
+							</div>
+							<div class="flex justify-between">
+								<div class="flex items-center gap-2">
+									<img src="/public/assets/icons/bedroom.png" alt="" class="w-5" />
+									<p class="text-sm text-gray-500">4Bed</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="/public/assets/icons/bathroom.png" alt="" class="w-5" />
+									<p class="text-sm text-gray-500">4Bathroom</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="/public/assets/icons/area.png" alt="" class="w-5" />
+									<p class="text-sm text-gray-500">1200sqft</p>
+								</div>
+							</div>
+
+							<div class="flex justify-between">
+								<button class="px-5 py-2 text-white bg-purple-500 rounded-sm">
+									Book Now
+								</button>
+								<p class="text-xl font-bold text-gray-700">$100,000</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="flex flex-col duration-200 ease-in-out shadow-md popular-card hover:scale-105">
 						<img src="/public/assets/images/bg.png" class="object-cover h-52" />
 						<div class="flex flex-col gap-5 p-3">
 							<div class="flex items-center gap-2">
@@ -169,38 +210,7 @@
 						</div>
 					</div>
 					<div
-						class="flex flex-col duration-200 ease-in-out shadow-md hover:scale-105">
-						<img src="/public/assets/images/bg.png" class="object-cover h-52" />
-						<div class="flex flex-col gap-5 p-3">
-							<div class="flex items-center gap-2">
-								<img src="/public/assets/icons/location.png" alt="" class="w-5" />
-								<p class="text-lg font-bold text-gray-500">Bahan, Yangon</p>
-							</div>
-							<div class="flex justify-between">
-								<div class="flex items-center gap-2">
-									<img src="/public/assets/icons/bedroom.png" alt="" class="w-5" />
-									<p class="text-sm text-gray-500">4Bed</p>
-								</div>
-								<div class="flex items-center gap-2">
-									<img src="/public/assets/icons/bathroom.png" alt="" class="w-5" />
-									<p class="text-sm text-gray-500">4Bathroom</p>
-								</div>
-								<div class="flex items-center gap-2">
-									<img src="/public/assets/icons/area.png" alt="" class="w-5" />
-									<p class="text-sm text-gray-500">1200sqft</p>
-								</div>
-							</div>
-
-							<div class="flex justify-between">
-								<button class="px-5 py-2 text-white bg-purple-500 rounded-sm">
-									Book Now
-								</button>
-								<p class="text-xl font-bold text-gray-700">$100,000</p>
-							</div>
-						</div>
-					</div>
-					<div
-						class="flex flex-col duration-200 ease-in-out shadow-md hover:scale-105">
+						class="flex flex-col duration-200 ease-in-out shadow-md popular-card hover:scale-105">
 						<img src="/public/assets/images/bg.png" class="object-cover h-52" />
 						<div class="flex flex-col gap-5 p-3">
 							<div class="flex items-center gap-2">
@@ -234,6 +244,197 @@
 			</div>
 		</div>
 
+		<!-- Comments -->
+		<div class="w-full py-10">
+			<div
+				class="flex flex-col justify-between max-w-5xl gap-10 px-2 mx-auto text-gray-700 sm:flex-row sm:gap-0 lg:px-0">
+				<div class="flex flex-col">
+					<h1 class="text-xl font-bold">Kevin Durant</h1>
+					<p class="text-lg">Founder, LA Mansion</p>
+				</div>
+				<div class="flex max-w-lg">
+					<span class="text-8xl">"</span>
+					<p class="text-lg">
+						Our business is built off of close relationships and we are glad that we
+						are able to share our position real estate experiences with ur clients.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our Services -->
+
+		<div class="w-full mt-20">
+			<div
+				class="flex flex-col items-center justify-between max-w-5xl gap-10 px-2 mx-auto md:flex-row lg:gap-0 lg:px-0">
+				<img src="" alt="" class="w-full bg-purple-300 service-img h-80 md:w-1/2" />
+				<div
+					class="flex flex-col w-full gap-5 px-0 md:w-1/2 service-content lg:px-5">
+					<p class="px-2 text-2xl">OUR SERVICES</p>
+					<h1 class="px-2 text-3xl font-bold text-gray-700">
+						Your Comfort is Our Priority
+					</h1>
+					<div class="grid grid-cols-2 gap-y-5">
+						<div class="flex items-center gap-2">
+							<span class="w-5 h-5 bg-purple-500 rounded-full"></span>
+							<p class="text-lg">Free Marketing</p>
+						</div>
+						<div class="flex items-center gap-2">
+							<span class="w-5 h-5 bg-purple-500 rounded-full"></span>
+							<p class="text-lg">Manage Viewings</p>
+						</div>
+						<div class="flex items-center gap-2">
+							<span class="w-5 h-5 bg-purple-500 rounded-full"></span>
+							<p class="text-lg">No Valuation</p>
+						</div>
+						<div class="flex items-center gap-2">
+							<span class="w-5 h-5 bg-purple-500 rounded-full"></span>
+							<p class="text-lg">Free Marketing</p>
+						</div>
+					</div>
+					<button class="w-40 text-center text-white bg-purple-500 rounded-sm h-14">
+						<a href="">See More</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our Blog -->
+		<div class="w-full mt-20">
+			<div class="max-w-5xl mx-auto">
+				<div class="flex flex-col justify-between gap-5 px-2 md:flex-row">
+					<div class="flex flex-col gap-5">
+						<p class="text-2xl">OUR BLOGS</p>
+						<h1 class="text-3xl font-bold text-gray-700">Latest Information</h1>
+					</div>
+					<p class="max-w-md">
+						Stay up to date with all the information about our listed properties.
+					</p>
+					<button class="w-40 text-center text-white bg-purple-500 rounded-sm h-14">
+						<a href="">See More</a>
+					</button>
+				</div>
+
+				<div
+					class="grid gap-5 px-2 py-5 blog-card-container lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+					<div class="flex flex-col shadow-md blog-card">
+						<img src="" alt="" class="h-64 bg-purple-200" />
+						<div class="flex flex-col gap-3 p-2">
+							<div class="flex items-center gap-2">
+								<span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+								<p>5 December 2022</p>
+							</div>
+							<div class="w-2/3 bg-black border border-gray-500"></div>
+							<p class="text-lg font-bold">
+								The Challenges of Investment in Real Estate
+							</p>
+							<button
+								class="w-32 h-10 text-center text-white bg-purple-500 rounded-sm">
+								<a href="">read More</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="flex flex-col shadow-md blog-card">
+						<img src="" alt="" class="h-64 bg-purple-200" />
+						<div class="flex flex-col gap-3 p-2">
+							<div class="flex items-center gap-2">
+								<span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+								<p>17 July 2022</p>
+							</div>
+							<div class="w-2/3 bg-black border border-gray-500"></div>
+							<p class="text-lg font-bold">Buy a Bungalow Near Ngwe Saung Beach</p>
+							<button
+								class="w-32 h-10 text-center text-white bg-purple-500 rounded-sm">
+								<a href="">read More</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="flex flex-col shadow-md blog-card">
+						<img src="" alt="" class="h-64 bg-purple-200" />
+						<div class="flex flex-col gap-3 p-2">
+							<div class="flex items-center gap-2">
+								<span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+								<p>10 August 2022</p>
+							</div>
+							<div class="w-2/3 bg-black border border-gray-500"></div>
+							<p class="text-lg font-bold">Land Prices are Dropping and Here's Why</p>
+							<button
+								class="w-32 h-10 text-center text-white bg-purple-500 rounded-sm">
+								<a href="">read More</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Testimonials -->
+
+		<div class="w-full py-5 mt-20 bg-purple-800">
+			<div class="max-w-5xl p-2 mx-auto">
+				<div class="flex flex-col gap-5 mb-5">
+					<p class="text-2xl text-gray-200">TESTIMONIALS</p>
+					<h1 class="text-3xl font-bold text-gray-200">
+						What Our Clients Say About Us
+					</h1>
+				</div>
+				<div
+					class="flex w-full overflow-x-auto overflow-y-hidden scroll-smooth snap-x scrollbar">
+					<div
+						class="flex items-center gap-5 mx-10 my-10 text-gray-200 snap-always snap-start min-w-fit">
+						<img src="" alt="" class="bg-purple-200 w-60 h-60"  />
+						<div class="flex flex-col gap-5">
+							<h1 class="text-2xl font-bold">Fikayo Tomori</h1>
+							<p class="text-base w-96">
+								I am very impressed with the service of Future Residency Limited. I'd
+								definitely recommend them to my friends.
+							</p class="text-2xl">
+							<div class="flex items-center gap-2">
+								<span class="w-5 h-5 bg-purple-200 rounded-full"></span>
+								<p class="text-lg">Footballer</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="flex items-center gap-5 mx-10 my-10 text-gray-200 snap-always snap-start min-w-fit">
+						<img src="" alt="" class="bg-purple-200 w-60 h-60"  />
+						<div class="flex flex-col gap-5">
+							<h1 class="text-2xl font-bold">Fikayo Tomori</h1>
+							<p class="text-base w-96">
+								I am very impressed with the service of Future Residency Limited. I'd
+								definitely recommend them to my friends.
+							</p class="text-2xl">
+							<div class="flex items-center gap-2">
+								<span class="w-5 h-5 bg-purple-200 rounded-full"></span>
+								<p class="text-lg">Footballer</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="flex items-center gap-5 mx-10 my-10 text-gray-200 snap-always snap-start min-w-fit">
+						<img src="" alt="" class="bg-purple-200 w-60 h-60"  />
+						<div class="flex flex-col gap-5">
+							<h1 class="text-2xl font-bold">Fikayo Tomori</h1>
+							<p class="text-base w-96">
+								I am very impressed with the service of Future Residency Limited. I'd
+								definitely recommend them to my friends.
+							</p class="text-2xl">
+							<div class="flex items-center gap-2">
+								<span class="w-5 h-5 bg-purple-200 rounded-full"></span>
+								<p class="text-lg">Footballer</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<script src="../../scripts/scrollreveal.js"></script>
 		<script src="../../components/index.js" type="module"></script>
 		<script src="./index.js"></script>
 	</body>

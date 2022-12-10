@@ -7,3 +7,25 @@
 html {
 	font-family: "Space Mono", monospace;
 }
+
+@layer utilities {
+	.scrollbar::-webkit-scrollbar {
+		width: 20px;
+		height: 20px;
+	}
+
+	.scrollbar::-webkit-scrollbar-track {
+		border-radius: 100vh;
+		background: none;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb {
+		background: #a855f7;
+		border-radius: 100vh;
+		border: 3px solid #e9d5ff;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		background: #e9d5ff;
+	}
+}
