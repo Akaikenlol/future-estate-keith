@@ -7,10 +7,18 @@ template.innerHTML = `
     <div class="max-w-5xl mx-auto flex justify-between items-center p-5">
         <img src="../assets/images/future-estate.png" />
 		<ul class="gap-10 hidden md:flex">
-			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Home</a></li>
+			<li><a href="/public/pages/Home/index.html" class="text-slate-600 text-md font-semibold hover:text-purple-500">Home</a></li>
 			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">About</a></li>
-			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Service</a></li>
-			<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">Blog</a></li>
+			<li>
+				<div class="dropdown dropdown-hover">
+					<label tabindex="0" class="text-slate-600 text-md font-semibold hover:text-purple-500 m-1">Service</label>
+					<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52">
+						<li><a href="">Rent</a></li>
+						<li><a href="">Sell</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="/public/pages/Blog/index.html" class="text-slate-600 text-md font-semibold hover:text-purple-500">Blog</a></li>
 			<li><a href="/public/pages/Contact/index.html" class="text-slate-600 text-md font-semibold hover:text-purple-500">Contact</a></li>
 		</ul>
 		<div class="flex gap-5 items-center">

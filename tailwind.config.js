@@ -33,5 +33,10 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss"), require("autoprefixer"), require("daisyui")],
+	plugins: [
+		require("tailwindcss"),
+		require("autoprefixer"),
+		require("daisyui"),
+		require("@tailwindcss/line-clamp"),
+	],
 };
