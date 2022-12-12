@@ -1,10 +1,10 @@
-const sr = ScrollReveal({
+const scrollR = ScrollReveal({
 	opacity: 0,
 	distance: "20px",
 	duration: 1000,
 });
 
-sr.reveal(`.popular-card, .blog-card`, {
+scrollR.reveal(`.popular-card, .blog-card`, {
 	origin: "left",
 	interval: 300,
 	delay: 300,
@@ -12,7 +12,7 @@ sr.reveal(`.popular-card, .blog-card`, {
 	easing: "ease-out",
 });
 
-sr.reveal(`.service-img`, {
+scrollR.reveal(`.service-img`, {
 	origin: "left",
 	distance: "100px",
 	duration: 700,
@@ -20,7 +20,7 @@ sr.reveal(`.service-img`, {
 	easing: "ease-in-out",
 });
 
-sr.reveal(`.service-content`, {
+scrollR.reveal(`.service-content`, {
 	origin: "right",
 	distance: "100px",
 	duration: 700,
