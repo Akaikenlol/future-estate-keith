@@ -5,7 +5,7 @@ template.innerHTML = `
 	@import url("../../styles.css");
 	</style>
     <div class="max-w-5xl mx-auto flex justify-between items-center p-5">
-        <img src="../assets/images/future-estate.png" />
+        <img src="/public/assets/images/logo.svg" class= "h-5 w-auto" />
 			<ul class="gap-10 hidden md:flex">
 				<li><a href="/public/pages/Home/index.html" class="text-slate-600 text-md font-semibold hover:text-purple-500">Home</a></li>
 				<li><a href="" class="text-slate-600 text-md font-semibold hover:text-purple-500">About</a></li>
