@@ -1886,6 +1886,10 @@ html {
   height: 1px;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1896,10 +1900,6 @@ html {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-5 {
-  height: 1.25rem;
 }
 
 .h-\[90px\] {
@@ -1967,10 +1967,6 @@ html {
   height: 1rem;
 }
 
-.h-128 {
-  height: 32rem;
-}
-
 .h-115 {
   height: 28rem;
 }
@@ -1981,6 +1977,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-52 {
@@ -2037,10 +2037,6 @@ html {
 
 .w-12 {
   width: 3rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .min-w-fit {
