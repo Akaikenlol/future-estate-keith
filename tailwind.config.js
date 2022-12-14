@@ -5,7 +5,7 @@ module.exports = {
 		themes: [
 			{
 				mytheme: {
-					primary: "#7c3aed",
+					primary: "#a855f7",
 
 					secondary: "#d1d5db",
 
@@ -30,6 +30,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				monospace: ["'Space Mono', monospace"],
+			},
+			spacing: {
+				128: "32rem",
+				115: "28rem",
 			},
 		},
 	},
