@@ -2177,6 +2177,10 @@ html {
   width: 5rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
